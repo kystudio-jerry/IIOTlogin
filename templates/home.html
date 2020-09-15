@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Home</h1>
+    <div class="card-wrapper">
+        <div class="card">
+            <h2 class="center">新增一個帳號</h2>
+            <form name="sigup_form">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="field" required>
+                <label for="email">EMail</label>
+                <input type="email" name="email" class="field" required>
+                <label for="password">Pass Word</label>
+                <input type="password" name="password" class="field" required>
+                <p class="error error--hidden"></p>
+                <input type="submit" value="Sign UP" class="btn">
+            </form>
+        </div>
+    </div>
+{% endblock %}
